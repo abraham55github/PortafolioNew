@@ -68,7 +68,7 @@ export default function Projects() {
 
                         }}
                         >
-                            <Img src="/src/assets/img/perfil4.png" alt="imagen" />
+                            <Img src="/public/img/perfil4.png" alt="imagen" />
                         </Grid>
                     </Grid>
 
