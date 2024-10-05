@@ -9,7 +9,7 @@ export default function Content() {
                 <Box display="flex" alignItems="center" sx={{
                     paddingLeft: { xs: 2, sm: 4, md: 6, lg: 10 },  // Cambia el padding según el tamaño de la pantalla     // En pantallas pequeñas, el layout será vertical
                 }}>
-                    <Avatar alt="Abraham Otero" src="../public/img/perfil1.png" sx={{ width: 64, height: 64 }} />
+                    <Avatar alt="Abraham Otero" src="../src/assets/img/perfil1.png" sx={{ width: 64, height: 64 }} />
                     <Box paddingLeft={2}>
                         <Button
                             variant="outlined"

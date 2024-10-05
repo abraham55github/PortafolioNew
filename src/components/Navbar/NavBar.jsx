@@ -154,11 +154,11 @@ export default function NavBar() {
                     label="Contacto"
                     value="contact"
                     icon={<Drafts />}
-                    component={Link}
                     to="contact"
-                    smooth={true}
-                    duration={500}
-                    offset={calculateOffset()} // Ajuste de desplazamiento
+                    color="secondary"
+                    variant="outlined"
+                    component="a"
+                    href="mailto:abraham.otero555@gmail.com"
                 />
             </BottomNavigation>
         </Box>
