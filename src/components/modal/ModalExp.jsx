@@ -10,17 +10,17 @@ const ModalExp = ({ open, onClose }) => {
         {
             title: "Desarrollo del Sistema de Inventario",
             content: "Durante mi experiencia laboral, diseñé e implementé una plataforma integral para el registro del inventario físico de cilindros, camiones bulks y tanques estacionarios. El objetivo del proyecto fue crear un sistema eficiente y escalable que facilitara el monitoreo diario del inventario en múltiples plantas. La plataforma ha tenido un gran impacto, ya que facilita la recopilación de datos en tiempo real, mejorando la eficiencia operativa y reduciendo los errores manuales. Además, la aplicación realiza cálculos precisos para convertir volúmenes en galones y litros, teniendo en cuenta factores como la temperatura y la gravedad específica de los líquidos, lo que garantiza mediciones exactas y confiables.",
-            imageUrl: "/src/assets/img/exp1.1.png", // Imagen de ejemplo
+            imageUrl: "/img/exp1.1.png", // Imagen de ejemplo
         },
         {
             title: "Automatización con herramientas Microsoft",
             content: "Logré implementar con la ayuda de herramientas de Microsoft como Power Automate, SharePoint, Forms y Lists un formulario que automatizaba la petición de implementos de seguridad en las diferentes plantas. Consistía en realizar un flujo desde el formulario donde se llenaba y se hacía la petición de implementos de seguridad de personal para la planta. Esta petición llegaba como notificación a la persona encargada, quien aprobaba o rechazaba la solicitud, regresando un resumen del pedido a ambas partes.",
-            imageUrl: "/src/assets/img/exp1.2.jpeg", // Imagen de ejemplo
+            imageUrl: "/img/exp1.2.jpeg", // Imagen de ejemplo
         },
         {
             title: "Soporte TI",
             content: "Colaboré con los usuarios para resolver problemas técnicos, desde la instalación y configuración de hardware hasta la solución de problemas de software. Esto no solo mejoró la productividad de los empleados, sino que también fortaleció la comunicación entre los diferentes departamentos.",
-            imageUrl: "/src/assets/img/exp1.3.webp", // Imagen de ejemplo
+            imageUrl: "/img/exp1.3.webp", // Imagen de ejemplo
         },
     ];
 
