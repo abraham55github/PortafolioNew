@@ -155,6 +155,7 @@ export default function NavBar() {
                     value="contact"
                     icon={<Drafts />}
                     to="contact"
+
                     color="secondary"
                     variant="outlined"
                     component="a"

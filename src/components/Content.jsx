@@ -93,6 +93,17 @@ export default function Content() {
                                 Mail
                             </Button>
                         </Grid>
+                        <Grid >
+                            <Button
+                                color="secondary"
+                                variant="outlined"
+                                
+                                component="a"
+                                href="https://drive.google.com/file/d/1Lf8UJFMGOiDMyPyZFvTj_kQQNoE59g_O/view?usp=sharing"
+                            >
+                                CV
+                            </Button>
+                        </Grid>
                     </Grid>
                 </Box>
             </Box>
