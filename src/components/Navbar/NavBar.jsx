@@ -57,7 +57,7 @@ export default function NavBar() {
             },
             {
                 root: null, // La raíz es la ventana visible
-                threshold: observerThreshold, // Usar el umbral dinámico
+                threshold: 0.6, // Usar el umbral dinámico
             }
         );
 
