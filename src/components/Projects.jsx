@@ -1,7 +1,7 @@
 import { Code } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 import CardPr from "./CardPr";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Grid2";
 
 const dataPr = [
     {
@@ -34,9 +34,28 @@ const dataPr = [
         description: "Colaboré en el desarrollo de una aplicación para almacenar datos y relacionarlos entre diversas bases de datos, incluyendo archivos Excel y SQL Server. Utilicé códigos comunes para comparar cantidades y asegurar su complementariedad. Diseñé la aplicación de manera independiente, permitiendo la carga de datos de múltiples fuentes y facilitando la comparación de información mediante elementos comunes.",
         sliders: [
             {
-                title: "Datacenter contruccion",
+                title: "Datacenter construcción",
                 content: "Para el desarrollo de esta aplicación, utilicé React en el frontend y Django en el backend, con el objetivo de conectar ambas tecnologías. El enfoque principal del proyecto es permitir la importación de un archivo Excel con cientos de miles de registros, optimizando su procesamiento. Dado el gran volumen de datos, implementé soluciones eficientes utilizando un servicio SQL para manejar las consultas y mostrar los datos en una tabla en el frontend. En el backend, trabajé en la optimización de funciones de paginación, búsqueda y filtrado para asegurar un rendimiento fluido en la presentación de los datos.",
                 imageUrl: "/img/pr2.png",
+            },
+            {
+                title: "Importar datos de excel",
+                content: "Para cargar los datos del archivo Excel en la base de datos, utilicé la biblioteca Pandas de Python. Se crearon modelos para representar las diferentes tablas generadas a partir de los informes en Excel, y se diseñaron vistas específicas para gestionar estas tablas. Además, se desarrolló una vista especial que servía como endpoint para la subida de archivos Excel a la base de datos, permitiendo realizar comparaciones consistentes y precisas entre los datos. Durante el proceso, se leyó el archivo Excel y se implementó un método para limpiar y normalizar los nombres de las columnas, de modo que coincidieran con las columnas correspondientes en la base de datos. También se formatearon las fechas y se implementó un sistema de caché para agilizar la carga de los cientos de miles de registros. Los datos procesados por Pandas se guardaron en la base de datos en lotes, mejorando así la eficiencia en la manipulación de grandes volúmenes de información.",
+                imageUrl: "/img/pr2.1.png",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "Bienes Raices",
+        imageUrl: "/img/pr3.png",
+        description: "Proyecto realizado con php desde 0, creando desde la estructura con un diseño modelo vista controlador para facilitar la comunicacion de las acciones de la pagina, se crea un esquema llamado activeRecord que se utiliza como controllador principal para el manejo de base de datos errores, etc. ",
+        githubUrl: "https://github.com/abraham55github/bienesraicesMVC",
+        sliders: [
+            {
+                title: "Datacenter contruccion",
+                content: "Para el desarrollo de esta aplicación, utilicé React en el frontend y Django en el backend, con el objetivo de conectar ambas tecnologías. El enfoque principal del proyecto es permitir la importación de un archivo Excel con cientos de miles de registros, optimizando su procesamiento. Dado el gran volumen de datos, implementé soluciones eficientes utilizando un servicio SQL para manejar las consultas y mostrar los datos en una tabla en el frontend. En el backend, trabajé en la optimización de funciones de paginación, búsqueda y filtrado para asegurar un rendimiento fluido en la presentación de los datos.",
+                imageUrl: "/img/pr.png",
             },
             {
                 title: "Importar datos de excel",
@@ -64,14 +83,15 @@ export default function Projects() {
             </Typography>
 
             {/* Uso de spacing responsivo */}
-            <Grid container spacing={{ xs: 2, md: 20 }} justifyContent={{ xs: "center", md: "flex-start" }}>
+            <Grid container spacing={{ xs: 2, md: 10 }} justifyContent={{ xs: "center", md: "space-evenly" }}>
                 {dataPr.map((project) => (
                     <Grid item xs={12} md={6} key={project.id}>
                         <CardPr
                             title={project.title}
                             imageUrl={project.imageUrl}
                             description={project.description}
-                            sliders={project.sliders}  
+                            sliders={project.sliders}
+                            githubUrl={project.githubUrl}
                         />
                     </Grid>
                 ))}

@@ -97,7 +97,6 @@ export default function Content() {
                             <Button
                                 color="secondary"
                                 variant="outlined"
-                                
                                 component="a"
                                 href="https://drive.google.com/file/d/1Lf8UJFMGOiDMyPyZFvTj_kQQNoE59g_O/view?usp=sharing"
                             >
