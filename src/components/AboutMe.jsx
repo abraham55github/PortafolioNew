@@ -43,18 +43,26 @@ export default function Projects() {
                             <Typography pl={5} variant="body1">
                                 ¡Hola! Soy Abraham Julio Otero González,{' '}
                                 <span style={{ color: '#69932e', fontWeight: 'bold' }}>
-                                    Ingeniero en Sistemas y Computación por la Universidad Tecnológica de Panamá.
+                                    Ingeniero en Sistemas y Computación por la Universidad Tecnológica de Panamá (Graduado Noviembre 2025).
                                 </span>{' '}
                                 Apasionado por la tecnología, me enfoco en desarrollar software eficiente aplicando{' '}
                                 <span style={{ color: '#69932e', fontWeight: 'bold' }}>
-                                    patrones de diseño y arquitecturas
+                                    buenas prácticas y arquitecturas modernas
                                 </span>{' '}
                                 que ofrezcan soluciones óptimas.{' '}
-                                Actualmente trabajo principalmente con{' '}
+                                Tengo experiencia en{' '}
                                 <span style={{ color: '#0b3c49', fontWeight: 'bold' }}>
-                                    React en JavaScript y Django en Python,
+                                    Java, Python, JavaScript,
                                 </span>{' '}
-                                creando aplicaciones web completas y escalables, optimizando el rendimiento y la experiencia del usuario.
+                                y en el ecosistema de{' '}
+                                <span style={{ color: '#0b3c49', fontWeight: 'bold' }}>
+                                    AWS (EC2, RDS, Lambdas, VPC/VPS).
+                                </span>{' '}
+                                También desarrollo aplicaciones con{' '}
+                                <span style={{ color: '#0b3c49', fontWeight: 'bold' }}>
+                                    React, Django, Power Apps y Power Automate,
+                                </span>{' '}
+                                creando soluciones completas y escalables que optimizan procesos y mejoran la experiencia del usuario.
                             </Typography>
 
 
@@ -68,7 +76,7 @@ export default function Projects() {
 
                         }}
                         >
-                            <Img src="/img/sacofoto1r1.png" alt="imagen" />
+                            <Img src="/img/sacofoto1r1.webp" alt="imagen" />
                         </Grid>
                     </Grid>
 

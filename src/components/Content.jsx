@@ -9,7 +9,7 @@ export default function Content() {
                 <Box display="flex" alignItems="center" sx={{
                     paddingLeft: { xs: 2, sm: 4, md: 6, lg: 10 },  // Cambia el padding según el tamaño de la pantalla     // En pantallas pequeñas, el layout será vertical
                 }}>
-                    <Avatar alt="Abraham Otero" src="/img/perfil1.png" sx={{ width: 64, height: 64 }} />
+                    <Avatar alt="Abraham Otero" src="/img/perfil1.webp" sx={{ width: 64, height: 64 }} />
                     <Box paddingLeft={2}>
                         <Button
                             variant="outlined"
@@ -33,7 +33,7 @@ export default function Content() {
 
                 <Box sx={{ paddingX: { sm: 5, xs: 2, lg: 5 }, paddingY: 2, paddingTop: 5 }}>
                     <Typography variant="h3" color="initial" fontWeight="bold" textAlign={'center'} sx={{ color: "secondary.main" }}>
-                        Abraham Otero
+                        ABRAHAM OTERO
                     </Typography>
 
                     <Typography
@@ -42,16 +42,14 @@ export default function Content() {
                         color="initial"
                         sx={{ fontSize: '1.1rem' }}
                     >
-                        1 año de experiencia, {' '}
                         <span style={{ color: '#69932e', fontWeight: 'bold' }}>
-                            Ingeniero en Sistemas y Desarrollador web, 
+                            Desarrollador de Software
                         </span>{' '}
-                        de Panamá{' '}
+                        | Enfoque en Mejora Continua {' '}
                         <span style={{ color: '#69932e', fontWeight: 'semibold', fontSize: 15}}>
-                            PA 
+                            Panamá, PA 
                         </span>{' '}
-                        Me apasiona crear aplicaciones web eficientes, escalables y
-                        orientadas al usuario, con especial interés en mejorar continuamente mis habilidades.
+                        Ingeniero de Sistemas con experiencia en desarrollo backend, automatización de procesos y arquitectura en la nube (AWS). Apasionado por crear soluciones tecnológicas eficientes y escalables.
                     </Typography>
 
 

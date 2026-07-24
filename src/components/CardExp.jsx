@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { Paper, Box, Typography, Button } from "@mui/material";
-import ModalExp from './modal/ModalExp'; // Asegúrate de ajustar la ruta según tu estructura de carpetas
+import ModalExp from './modal/ModalExp';
 
-export default function CardExp() {
-  const [openModal, setOpenModal] = useState(false); // Estado para manejar el modal
+export default function CardExp({ jobTitle, company, dates, description, slides }) {
+  const [openModal, setOpenModal] = useState(false);
 
-  // Funciones para abrir y cerrar el modal
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => setOpenModal(false);
 
@@ -14,41 +13,37 @@ export default function CardExp() {
       <Paper
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", sm: "row" }, // Cambiar a columna en pantallas pequeñas
+          flexDirection: { xs: "column", sm: "row" },
           alignItems: "flex-start",
           gap: 2,
           overflow: "hidden",
           padding: 2,
-          margin: 2, // Añadir margen para separar las tarjetas
-          borderRadius: 2, // Esquinas redondeadas
+          margin: 2,
+          borderRadius: 2,
         }}
       >
         <Box
           sx={{
             padding: 2,
-            flexBasis: { xs: "100%", sm: "30%" }, // Ocupa todo el ancho en móviles
+            flexBasis: { xs: "100%", sm: "30%" },
           }}
         >
           <Typography color="primary" variant="h5" display="flex">
-            Innovación y Desarrollo TI
+            {jobTitle}
           </Typography>
-          <Typography variant="body1">Panagas</Typography>
+          <Typography variant="body1">{company}</Typography>
           <Typography color="grey" variant="body2">
-            Abril - Septiembre 2024
+            {dates}
           </Typography>
         </Box>
         <Box
           sx={{
             padding: 2,
-            flexBasis: { xs: "100%", sm: "70%" }, // Ocupa todo el ancho en móviles
+            flexBasis: { xs: "100%", sm: "70%" },
           }}
         >
           <Typography pb={2}>
-            Durante 6 meses, desarrollé una plataforma de inventario para cilindros y tanques.
-            También proporcioné soporte técnico al equipo informático,
-            desarrollé soluciones automatizadas con Power Automate y SharePoint,
-            realicé el despliegue de aplicaciones en un servidor Linux con Apache2
-            y participé en el desarrollo de una aplicación para consolidar datos.
+            {description}
           </Typography>
           <Button variant="contained" color="primary" onClick={handleOpenModal}>
             Detalles
@@ -59,6 +54,7 @@ export default function CardExp() {
       <ModalExp
         open={openModal}
         onClose={handleCloseModal}
+        slides={slides}
       />
     </>
   );
